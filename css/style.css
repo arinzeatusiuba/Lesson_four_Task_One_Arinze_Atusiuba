@@ -1,53 +1,520 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+
+
+
+
+header {
+    height: 120px;
+    width: 100%;
+    background-color: #356bfd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+.navbar {
+    height: 38px;
+    width: 100%;
+    background-color: #0a0a23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-body {
-	line-height: 1;
-	width: 100%;
+.nav-left {
+    width: 35%;
+    background-color: #292964;
+    align-items: center;
+    display: none;
 }
 
-ol, ul {
-	list-style: none;
+.nav-left input {
+    width: 60%;
+    height: 50px;
+    background-color: #363662;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
 }
 
-blockquote, q {
-	quotes: none;
+.search {
+    color: #b2b2ba;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
-	content: '';
-	content: none;
+.nav-left input::placeholder {
+    color: #1c1c50;
+    font-size: 18px;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.nav-logo {
+    width: 30%;
+    height: 100%;
+	cursor: pointer;
 }
 
-/* Do not write a css rule above here! Use the space below  */
+.nav-logo img {
+    width: 100%;
+    height: 10px;
+    object-fit: cover;
+}
+
+.nav1 {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer a {
+    color: #1b1b32;
+    text-decoration: none;
+}
+
+.bonus a{
+    color: black;
+    font-weight: bold;
+}
+
+.nav1 a {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+    display: none;
+}
 
 
-/* Write your css below here */
+
+.nav1 button {
+    background-color: #de8909;
+    height: 28px;
+    width: 92px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tbar {
+    height: 42px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    margin-top: 90px;
+    letter-spacing: .2px;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: 900;
+	margin-top: 20px;
+}
+
+.date a {
+    text-decoration: none;
+}
+
+main h1 {
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+.author {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.author img{
+	width: 150px;
+	height: 150px;
+}
+
+.author a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.blog {
+    width: 100%;
+    margin-top: 25px;
+    display: none;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog-2 {
+    width: 100%;
+	padding: 0 20px;
+}
+
+.blog-2 code{
+    background-color: #D0D0D5;
+    font-size: 15.2px;
+    padding: 0 5px 2px;
+}
+
+.blog-2 p {
+    margin-top: 25px;
+    margin-bottom: 33px;
+    font-size: 19px;
+    line-height: 1.6em;
+}
+
+.blog-2 > div{
+	margin-top: 60px;
+}
+
+.blog-2 h1{
+
+	font-size: 30px;
+	font-weight: 900;
+	margin: 18px 0 7.2px
+}
+
+.bonus p.click{
+    letter-spacing: 0;
+    margin: 70px 0;
+}
+
+.blog-2 h2{
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.blog-2 img {
+    width: 100%;
+    margin-top: 33px;
+}
+
+.blog-2 p.label {
+    font-size: 15.3px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.blog-2 ul {
+    list-style: disc;
+    font-size: 19px;
+    margin-left: 20px;
+}
+
+.blog-2 ul li {
+    margin: 22px 0;
+}
+
+.blog-2 p.link {
+    margin-top: 40px;
+}
+
+.vid-hold {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.vid-hold iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main hr {
+    margin: 42px 0;
+}
+
+.author-card {
+    display: flex;
+}
+
+.author-card img {
+    width: 60px;
+    height: 60px;
+}
+
+.bio p {
+    font-size: 16px;
+    color: #3b3b4f;
+    letter-spacing: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.bio a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.tweet {
+    font-size: 19px;
+}
+
+.tweet p {
+    margin-top: 44px;
+}
+
+.footer-desc p {
+    line-height: 30px;
+}
+
+.blog-2 h1 + p{
+    margin-top: 0;
+}
+
+.blog-2 p:nth-child(1) {
+    font-size: 23.5px;
+    margin-bottom: 41px;
+}
+
+.tweet p:nth-child() {
+    margin-top: 33px;
+}
+
+.tweet button {
+    font-size: 19px;
+    border: 3px solid black;
+    background: #dfdfe2;
+    color: black;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+
+footer {
+    position: relative;
+    color: #1b1b32;
+    background: #eeeef0;
+    line-height: 1.6;
+	font-family: Lato,sans-serif;
+    margin-top: 70px;
+}
+
+.footer-hold {
+    padding: 30px 25px;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h4.trending {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px 15px;
+    margin-top: 32px;
+}
+
+.donate-link {
+    font-size: 18px;
+	font-weight: 700;
+}
+
+.donate-link a {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.trending-guides {
+    display: flex;
+    flex-direction: column;
+}
+
+.col,
+.col33,
+.col22 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col a {
+    padding: 5px 0;
+}
+
+.charity-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.charity-links a {
+    padding: 5px 10px;
+}
+
+.footer-top + hr {
+    display: none;
+}
+
+.footer-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tbar a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.bonus a:hover{
+    text-decoration: none;
+}
+
+.nav1 a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.tbar a:nth-child(2) {
+    text-decoration: underline;
+}
+
+.blog-2 p.link a {
+    color: black;
+}
+
+.tbar a:nth-child(2):hover {
+    text-decoration: none;
+}
+
+.blog-2 p.link a:hover {
+    text-decoration: none;
+}
+
+
+
+@media screen and (width <=407px) {
+    main {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (width >= 500px) {
+    .nav1 a {
+        display: inline-block;
+    }
+
+    .date {
+        margin-top: 100px;
+    }
+
+    .blog-2 {
+        margin: auto;
+        width: 84%;
+    }
+
+	.blog-2 h2{
+        font-size: 28px;
+	}
+    
+    header .tbar,
+    .tbar a {
+        font-size: 17px;
+    }
+    
+    main {
+        margin-top: 30px;
+    }
+    
+    main h1 {
+        font-size: 50px;
+    }
+
+    .blog-2 h1{
+        font-size: 36px;
+    }
+    
+    .trending-guides {
+        flex-flow: row wrap;
+    }
+
+    .col-1,
+    .col-2 {
+        flex: 1 0 45%;
+    }
+
+    .col-3 {
+        flex: 1 0 100%;
+        flex-direction: row;
+    }
+
+    .col33,
+    .col22{
+        flex: 1 0 45%;
+    }
+}
+
+@media screen and (width >= 700px) {
+    .blog {
+        display: block;
+    }
+
+    .blog-2 {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (width >= 1000px) {
+    .nav-left {
+        display: flex;
+    }
+
+    .col-1 {
+        margin-right: initial;
+    }
+
+    .nav-left,
+    .nav1 {
+        width: 35%;
+    }
+
+    .navimage {
+        width: 25%;
+    }
+
+    .navimage img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .blog-2 {
+        width: 75%;
+        margin: 0;
+    }
+
+    .thumbnail-photo {
+        margin: 5rem auto;
+        width: 75%;
+    }
+
+    .vid-hold iframe {
+        width: 95%;
+        height: 95%;
+    }
+}
